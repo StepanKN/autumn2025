@@ -4,15 +4,13 @@ import { customButtonProps } from "@/types";
 import Image from "next/image"
 import React from 'react';
 
-const CustomButton = ({
-    title, containerStyles, handleClick, btnType, textStyles, rightIcon }
-): customButtonProps => {
+const CustomButton = ({ title, containerStyles, handleClick, btnType, textStyles, rightIcon }: CustomButtonProps) => {
   return (
     <button
-    disabled={false}
-    type={btnType || "button"}
-    className={'custom-btn ${containerStyles}'}
-    onClick={handleClick}
+      type={btnType || "button"}
+className={`flex items-center justify-center font-bold py-2 px-6 min-w-[130px]
+   ${containerStyles}`}
+      onClick={handleClick}
     >
         <span className={`flex-1 ${textStyles}`}>
         {title}

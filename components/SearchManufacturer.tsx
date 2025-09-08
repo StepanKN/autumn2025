@@ -30,6 +30,7 @@ const SearchManufacturer = ({ manufacturer, setManufacturer }: SearchManufacture
             />
           </Combobox.Button>
 
+
           <Combobox.Input
             className="search-manufacturer__input pl-10"
             placeholder="Volkswagen"
